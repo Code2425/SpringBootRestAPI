@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>RESTAPI for FILE upload and Download</title>
+</head>
+<body>
+	<h3>FILE UPLOAD UI</h3>
+
+	<script type="text/javascript">
+	function change_page(){ window.location.href = "Upload.html"; }
+	</script>
+
+	<form action="upload" method="post" enctype="multipart/form-data">
+		<div>
+			<label for="upload-file-input">Upload your file:</label> <input
+				id="upload-file-input" type="file" name="uploadFile" accept="*" />
+			<input type="submit" value="uploadFile"/>
+			
+		</div>
+	</form>
+		<a href="/index.html">HOME</a>
+	<br />
+	<br />
+	<form action="getfile" method="GET" enctype="multipart/form-data">
+		<table border="2px">
+			<tr>
+				<td>GET FILE METADATA</td>
+			</tr>
+
+			<tr>
+				<td><input type=submit value="GetFileMetadat" /></td>
+			</tr>
+		</table>
+	</form>
+	
+</body>
+</html>
